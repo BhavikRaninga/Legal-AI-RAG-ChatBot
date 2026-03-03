@@ -1,0 +1,10 @@
+
+torch
+transformers
+sentence-transformers
+faiss-cpu  # or faiss-gpu if you want
+gradio
+pandas
+numpy
+bitsandbytes
+accelerate
