@@ -1,22 +1,24 @@
-🎓 Learning Outcomes
-Advanced RAG implementation (chunking → retrieval → generation)
+# 🇮🇳 Legal AI RAG Chatbot
 
-Production LLM quantization (4-bit BitsAndBytes)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BhavikRaninga/Legal-AI-RAG-Chatbot/blob/main/Legal-RAG-Chatbot.ipynb)
+[![Gradio Demo](https://img.shields.io/badge/Gradio-Demo-brightgreen)]([https://your-gradio-link-if-deployed](https://huggingface.co/spaces/BhavikRaninga/Legal-AI-RAG-Demo))
 
-Semantic search with FAISS + normalized embeddings
+**Advanced RAG (Retrieval-Augmented Generation) chatbot for Indian legal documents.** 
+PDFs → sentence-aware chunking → BGE embeddings → FAISS search → Zephyr-7B generation.
 
-Sentence-aware text processing
+## 🚀 Features
+- **Sentence-aware chunking** preserves legal context
+- **BGE-base embeddings** + **FAISS IndexFlatIP** for semantic search
+- **Zephyr-7B-beta** (4-bit quantized) for factual legal answers
+- **Gradio ChatInterface** for production-ready UI
+- End-to-end pipeline: PDF → answer with citations
 
-End-to-end ML deployment with Gradio
-
-🤝 Acknowledgments
-Built with Transformers, FAISS, Gradio, SentenceTransformers.
-
-NLP: Transformers, SentenceTransformers
-Search: FAISS (cosine similarity)
-LLM: Zephyr-7B (4-bit, BitsAndBytes)
-UI: Gradio ChatInterface
-Vectorization: BGE-base-en-v1.5
+## 🛠 Tech Stack
+-NLP: Transformers, SentenceTransformers
+-Search: FAISS (cosine similarity)
+-LLM: Zephyr-7B (4-bit, BitsAndBytes)
+-UI: Gradio ChatInterface
+-Vectorization: BGE-base-en-v1.5
 
 
 ## 📊 Pipeline
@@ -32,39 +34,40 @@ FAISS Index → Semantic Search → Zephyr Generation → Answer + Sources
 
 ## 🏃‍♂️ Quick Start
 
-**Option 1: Colab (Recommended)**  
+**Option 1: Colab (Recommended)**
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BhavikRaninga/Legal-AI-RAG-Chatbot/blob/main/Legal-RAG-Chatbot.ipynb)
 
 **Option 2: Local**
 ```bash
 pip install -r requirements.txt
 python app.py
+```
 
-
-📈 Results
+## 📈 Results
 Precision: Top-3 retrieval > 0.85 cosine similarity
 
 Response time: <3s per query (GPU)
 
 Context faithfulness: 100% (strict prompt engineering)
 
-📂 Project Structure
+## 📂 Project Structure
+```
 ├── app.py              # Complete Gradio app
 ├── Legal-RAG-Chatbot.ipynb  # Full notebook walkthrough
 ├── requirements.txt    # Dependencies
 └── README.md          # You're reading it!
+```
 
+## 🎓 Learning Outcomes
+-Advanced RAG implementation (chunking → retrieval → generation)
 
-🎓 Learning Outcomes
-Advanced RAG implementation (chunking → retrieval → generation)
+-Production LLM quantization (4-bit BitsAndBytes)
 
-Production LLM quantization (4-bit BitsAndBytes)
+-Semantic search with FAISS + normalized embeddings
 
-Semantic search with FAISS + normalized embeddings
+-Sentence-aware text processing
 
-Sentence-aware text processing
+-End-to-end ML deployment with Gradio
 
-End-to-end ML deployment with Gradio
-
-🤝 Acknowledgments
+## 🤝 Acknowledgments
 Built with Transformers, FAISS, Gradio, SentenceTransformers.
