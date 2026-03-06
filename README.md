@@ -10,7 +10,8 @@ PDFs → sentence-aware chunking → BGE embeddings → FAISS search → Zephyr-
 - **Sentence-aware chunking** preserves legal context
 - **BGE-base embeddings** + **FAISS IndexFlatIP** for semantic search
 - **Zephyr-7B-beta** (4-bit quantized) for factual legal answers
-- **Gradio ChatInterface** for production-ready UI
+- **Gradio ChatInterface**<img width="1915" height="965" alt="Screenshot 2026-03-06 121644" src="https://github.com/user-attachments/assets/52147943-b4c7-457b-9b02-0cbfe78903c9" />
+ for production-ready UI
 - End-to-end pipeline: PDF → answer with citations
 
 ## 🛠 Tech Stack
