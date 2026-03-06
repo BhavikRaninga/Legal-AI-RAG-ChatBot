@@ -1,7 +1,7 @@
 # 🇮🇳 Legal AI RAG Chatbot
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BhavikRaninga/Legal-AI-RAG-Chatbot/blob/main/Legal-RAG-Chatbot.ipynb)
-[![Gradio Demo](https://img.shields.io/badge/Gradio-Demo-brightgreen)]([https://your-gradio-link-if-deployed](https://huggingface.co/spaces/BhavikRaninga/Legal-AI-RAG-Demo))
+[![Gradio Demo](https://img.shields.io/badge/Gradio-Demo-brightgreen)](https://huggingface.co/spaces/BhavikRaninga/Legal-AI-RAG-Demo)
 
 **Advanced RAG (Retrieval-Augmented Generation) chatbot for Indian legal documents.** 
 PDFs → sentence-aware chunking → BGE embeddings → FAISS search → Zephyr-7B generation.
